@@ -1,0 +1,32 @@
+name: WhatsApp Bot Runner
+
+# Schedule the workflow to restart the bot every 5 hours
+# and allow manual trigger
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your repo
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'   # Use your Node version
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Run the bot
+      - name: Start Bot
+        run: |
+          node start.js
