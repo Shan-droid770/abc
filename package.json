@@ -5,14 +5,13 @@
 "main": "start.js",
   "type": "commonjs",
   "scripts": {
-    "install": "npm install --legacy-peer-deps"
     "start": "pm2 start start.js --deep-monitoring --attach --name ASITHA-MD",
     "stop": "pm2 stop ASITHA-MD",
     "restart": "pm2 restart ASITHA-MD"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "latest",
-    "@whiskeysockets/baileys": "github:rendichpras/zaileys",
+    "@whiskeysockets/baileys": "github:nstar-y/bail",
     "pino": "latest",
     "pm2": "^5.2.0",
     "express": "latest",
