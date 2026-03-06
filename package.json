@@ -48,7 +48,7 @@
     "@sl-code-lords/esana-news": "latest",
     "adm-zip": "^0.5.16",
     "@dark-yasiya/news-scrap": "1.0.4",
-    "sharp": "^0.33.5",
+    "sharp": "latest",
     "acrcloud": "latest",
     "gifted-btns":"latest",
     "xml2js": "0.6.2",
