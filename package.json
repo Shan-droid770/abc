@@ -52,7 +52,7 @@
     "acrcloud": "latest",
     "gifted-btns":"latest",
     "xml2js": "0.6.2",
-    "jimp": "^1.6.0",
+    "jimp": "latest",
     "node-cache": "latest",
     "protobufjs":"latest",
     "crypto-js": "latest",
